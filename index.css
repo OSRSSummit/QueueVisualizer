@@ -1,0 +1,41 @@
+table {
+    width: 200px;
+}
+
+table, tr, td {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    list-style-type: none;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.normal {
+    background-color: lightblue;
+}
+
+.strong {
+    background-color: bisque;
+}
+
+.btn {
+    float: right;
+    margin-left: 2px;
+}
+
+.interfaced {
+    background-color: lightgreen;
+}

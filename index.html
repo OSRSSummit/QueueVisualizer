@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body onload="init()">
+        <div id="visualiser">
+            <b>Queue</b>
+            <table>
+                <tr>                    
+                    <td colspan=2>Tick: <span id="ticknumber">0</span></td>
+                    <td colspan=2>Step: <span id="stepnumber">0</span></td>
+                </tr>
+                <tr>                    
+                    <td onclick="interfaced()" id="intcol" colspan=4>Interfaced: <span id="interfaced">no</span></td>
+                </tr>
+                <tr>
+                    <td colspan=4>
+                        <ul id="queue">
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="addN()" colspan=2>+normal</td>
+                    <td onclick="addS()"colspan=2>+strong</td>
+                </tr>
+                <tr>                    
+                    <td onclick="prevTick()">&lt;&lt;</td>
+                    <td onclick="prevStep()">&lt;</td>
+                    <td onclick="nextStep()">&gt;</td>
+                    <td onclick="nextTick()">&gt;&gt;</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div id="import">
+            <button onclick="imp()">import</button> 
+            <button onclick="exp()">export</button><br>
+            <textarea id="exportfield"></textarea>
+        </div>
+    </body>
+</html>
